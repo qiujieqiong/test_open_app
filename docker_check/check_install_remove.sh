@@ -12,5 +12,6 @@ cd /docker_check_pkgs_open/test_open_app/docker_check
 apt-get -y update
 env
 export LANG=en_US.UTF-8
+dbus-daemon --system
 python3 docker_check_apps.py
 cat pkgs.info
